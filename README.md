@@ -62,34 +62,6 @@ The four SSL experiments use:
 
 All the Part-B downstream models use fine-tuned encoders (`frozen_encoder=False`) and a weighted CE + Dice segmentation objective.
 
-## Repository layout
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── notebooks/
-│   ├── 00_eda_and_data_prep.ipynb
-│   ├── 01_deeplabv3_resnet50.ipynb
-│   ├── 02_segformer_b0.ipynb
-│   ├── 03_yolov26n_sem_and_part_a_comparison.ipynb
-│   ├── 04_part_b_data_prep.ipynb
-│   ├── 05_simclr.ipynb
-│   ├── 06_byol.ipynb
-│   ├── 07_mae.ipynb
-│   ├── 08_dinov2.ipynb
-│   └── 09_final_comparison.ipynb
-├── final comparison results/
-│   └── final_comparison.csv
-├── report/
-│   └──_Project_Report.pdf
-└── docs/
-    ├── KAGGLE_NOTEBOOKS_URLs.md
-    ├── NOTEBOOK_RUN_ORDER.md
-
-```
-
 ## Dataset
 
 The BCSD-2024 dataset comprises 10 patients of mammography. The dataset's performance is assessed using the proposed spatial attention mechanism (SAM) for breast lesion segmentation.
@@ -113,7 +85,7 @@ The EDA also found non-uniform sampled image dimensions and two image-mask shape
 
 ## Kaggle notebooks
 
-All 10 notebook links of the final project are in `docs/KAGGLE_NOTEBOOKS_URLs.md`
+All 10 notebook links of the final project are in `KAGGLE_NOTEBOOKS_URLs.md`
 
 **Team Members:**
 - Lima Prodhan        (2021-3-60-180)
