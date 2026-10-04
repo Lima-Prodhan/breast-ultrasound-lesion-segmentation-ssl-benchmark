@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+
+# Training outputs / checkpoints
+checkpoints/
+weights/
+*.pt
+*.pth
+*.safetensors
+
+# Generated notebook artifacts
+/kaggle/
+outputs/
+artifacts/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

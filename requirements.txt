@@ -1,0 +1,16 @@
+# Core packages used by the source notebooks.
+# The original experiments ran in a Kaggle CUDA environment.
+# Source-observed versions are pinned where they were explicitly reported.
+
+numpy
+pandas
+opencv-python
+matplotlib
+scikit-learn
+scikit-image
+tqdm
+albumentations==2.0.8
+torch==2.10.0
+torchvision
+transformers==5.0.0
+ultralytics==8.4.95
