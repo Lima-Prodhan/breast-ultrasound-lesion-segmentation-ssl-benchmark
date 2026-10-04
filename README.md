@@ -7,7 +7,6 @@ This project benchmarks supervised semantic segmentation models for breast ultra
 The study uses the **BCSD-2024 Breast Ultrasound Lesion Segmentation** dataset with **1,521 image-mask pairs from 10 patients**. The final split is patient-level (seed 42) with **1,035 train**, **318 validation**, and **168 test** images.
 
 The project is a two-part study.
-
 Part A establishes a supervised benchmark among:
 - DeepLabV3-ResNet50
 - SegFormer-B0
@@ -38,7 +37,7 @@ DINOv2 is the best-performing SSL method in the comparison with **mIoU 0.7633**,
 |       BYOL          | **0.7102** |   0.4352   |   0.7995   |      318        |          81.1%            |
 |       MAE           | **0.4900** |   0.0001   |   0.4950   |      318        |          55.9%            |
 
-The other part is in `final comparison results`
+DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set. The other comparison part of the result is in `final comparison results`
 
 ## Methodology
 
@@ -100,19 +99,7 @@ The BCSD-2024 dataset comprises 10 patients of mammography. The dataset's perfor
 The repository does not redistribute **the BCSD-2024 dataset**. The notebooks expect the dataset through their Kaggle environment paths.
 The project report describes the masks as binary after grayscale thresholding at 127. The EDA reports severe pixel imbalance in the sampled masks: approximately **99% background pixels vs. 1% lesion pixels**.
 
-# Results and limitations
-
-## Reported final metrics
-
-The report and final comparison notebook give the following consolidated results:
-
-- Part-A SegFormer-B0: mIoU **0.8758**, lesion IoU **0.7579**, mean Dice **0.9296**.
-- DINOv2: mIoU **0.7633**, lesion IoU **0.5408**, mean Dice **0.8474**.
-- SimCLR: mIoU **0.7232**, lesion IoU **0.4602**, mean Dice **0.8117**.
-- BYOL: mIoU **0.7102**, lesion IoU **0.4352**, mean Dice **0.7995**.
-- MAE: mIoU **0.4900**, lesion IoU **0.0001**, mean Dice **0.4950**.
-
-DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set.
+# Limitations
 
 ## Evaluation-design caveat
 
