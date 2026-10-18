@@ -37,7 +37,7 @@ DINOv2 is the best-performing SSL method in the comparison with **mIoU 0.7633**,
 |       BYOL          | **0.7102** |   0.4352   |   0.7995   |      318        |          81.1%            |
 |       MAE           | **0.4900** |   0.0001   |   0.4950   |      318        |          55.9%            |
 
-DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set. The other comparison part of the result is in `final comparison results` (final_comparison.csv) 
+DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set. The other comparison part of the result is in [`final comparison results`](final_comparison.csv) 
 
 ## Methodology
 
@@ -71,13 +71,13 @@ The BCSD-2024 dataset comprises 10 patients of mammography. The dataset's perfor
 The repository does not redistribute **the BCSD-2024 dataset**. The notebooks expect the dataset through their Kaggle environment paths.
 The project report describes the masks as binary after grayscale thresholding at 127. The EDA reports severe pixel imbalance in the sampled masks: approximately **99% background pixels vs. 1% lesion pixels**.
 
-# Limitations
+## Limitations
 
-## Evaluation-design caveat
+**Evaluation-design caveat**
 
 Part B uses the test split for both monitoring/checkpoint selection and final evaluation. The project report explicitly notes that this can make the final reported metrics somewhat optimistic relative to an untouched test set.
 
-## Dataset limitations
+**Dataset limitations**
 
 The project uses only 10 patients. The EDA reports 1,521 image-mask pairs and a highly imbalanced sampled pixel distribution of roughly 99% background and 1% lesion. This makes lesion IoU and mIoU more informative than raw pixel accuracy for the main segmentation target.
 
@@ -85,11 +85,5 @@ The EDA also found non-uniform sampled image dimensions and two image-mask shape
 
 ## Kaggle notebooks
 
-All 10 notebook links of the final project are in `KAGGLE_NOTEBOOKS_URLs.md`
+All 10 notebook links of the final project are in [`KAGGLE_NOTEBOOKS_URLs.md`](KAGGLE_NOTEBOOKS_URLs.md) 
 
-**Team Members:**
-- Lima Prodhan        (2021-3-60-180)
-- Mahbub Hasan        (2021-3-60-261)
-- Sumaiya Hoque Riyan (2022-1-60-111)
-
-**Course: Digital Image Processing, East West University.**
