@@ -37,7 +37,7 @@ DINOv2 is the best-performing SSL method in the comparison with **mIoU 0.7633**,
 |       BYOL          | **0.7102** |   0.4352   |   0.7995   |      318        |          81.1%            |
 |       MAE           | **0.4900** |   0.0001   |   0.4950   |      318        |          55.9%            |
 
-DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set. The other comparison part of the result is in `final comparison results`
+DINOv2 recovered **87.2%** of the full-supervision SegFormer-B0 mIoU while using **318 labelled images** equal to **30.7%** of the 1,035-image Part-A training set. The other comparison part of the result is in `final comparison results` (final_comparison.csv) 
 
 ## Methodology
 
